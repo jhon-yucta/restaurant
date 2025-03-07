@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVAS</title>
+    <link rel="stylesheet" href="style.css"> <!-- Vincula tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>RESERVAS</h1>
+        <nav>
+            <ul class="navegacion">
+                <a href="index.html">Volver a la Página Principal</a>
+                <a href="gestiondemenu.html">Gestion de menu</a>
+                <a href="gestiondeordenes.html">Gestion de ordenes</a>
+                <a href="gestiondepersonal.html">Gestion de Personal</a>
+                <a href="facturacion.html">Facturación</a>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- Gestión de Reservas -->
+     <section id="reservas">
+        <h2>Gestión de Reservas</h2>
+        <form id="reserva-form">
+            <label for="nombre-reserva">Nombre:</label>
+            <input type="text" id="nombre-reserva" name="nombre-reserva" required>
+            <label for="fecha-reserva">Fecha:</label>
+            <input type="date" id="fecha-reserva" name="fecha-reserva" required>
+            <label for="hora-reserva">Hora:</label>
+            <input type="time" id="hora-reserva" name="hora-reserva" required>
+            <button type="submit">Reservar</button>
+        </form>
+        <div id="reserva-list">
+            <!-- Lista de reservas -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PIZZAMANIA | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Si necesitas JavaScript para funcionalidades -->
+</body>
+</html>

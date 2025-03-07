@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTURACION</title>
+    <link rel="stylesheet" href="style.css"> <!-- Vincula tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>facturacion</h1>
+        <nav>
+            <ul class="navegacion">
+                <a href="index.html">Volver a la Página Principal</a>
+                <a href="gestiondemenu.html">Gestion de menu</a>
+                <a href="gestiondeordenes.html">Gestion de ordenes</a>
+                <a href="reservas.html">reservas</a>
+                <a href="gestiondepersonal.html">Gestion de personal</a>
+            </ul>
+        </nav>
+    </header>
+
+      <!-- Facturación -->
+    <section id="facturacion">
+        <h2>Facturación</h2>
+        <form id="factura-form">
+            <label for="numero-orden">Número de Orden:</label>
+            <input type="number" id="numero-orden" name="numero-orden" required>
+            <label for="monto">Monto Total:</label>
+            <input type="number" id="monto" name="monto" required>
+            <button type="submit">Generar Factura</button>
+        </form>
+        <div id="factura-list">
+            <!-- Lista de facturas -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PIZZAMANIA| Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Si necesitas JavaScript para funcionalidades -->
+</body>
+</html>

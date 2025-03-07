@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pizza.jpg'); /* Aquí se pone el nombre del archivo de la imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: rgb(241, 13, 13);
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Secciones */
+section {
+    padding: 40px 20px;
+}
+
+/* Formularios */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Lista de elementos */
+div#menu-list, div#orden-list, div#reserva-list, div#personal-list, div#factura-list {
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.blanco {
+    color: white;
+
+}
+
+h2 {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.navegacion a {
+    color: #f8f5f4; /* Color de texto, por ejemplo, un tono de naranja */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    padding: 10px;
+}
+
+/* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* 100% de la altura de la ventana */
+    margin: 0;
+}
+
+/* Contenido principal de la página */
+main {
+    flex: 1; /* Esto asegura que el contenido ocupe todo el espacio disponible */
+}
+
+/* Pie de página */
+footer {
+    background-color: #0a0a0aab; /* Opcional: el color del pie de página */
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Esto empuja el pie de página al final */
+}
+
+

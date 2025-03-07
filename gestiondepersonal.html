@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTION DE PERSONAL</title>
+    <link rel="stylesheet" href="style.css"> <!-- Vincula tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Gestión de personal</h1>
+        <nav>
+            <ul class="navegacion">
+                <a href="index.html">Volver a la Página Principal</a>
+                <a href="gestiondemenu.html">Gestion de menu</a>
+                <a href="gestiondeordenes.html">Gestion de ordenes</a>
+                <a href="reservas.html">reservas</a>
+                <a href="facturacion.html">Facturación</a>
+            </ul>
+        </nav>
+    </header>
+
+      <!-- Gestión de Personal -->
+    <section id="personal">
+        <h2>Gestión de Personal</h2>
+        <form id="personal-form">
+            <label for="nombre-personal">Nombre del Empleado:</label>
+
+            <select name="" id="nombre-personal">
+                <option value="rd">Roman Diaz</option>
+                <option value="kc">katherine Castillo</option>
+                <option value="tr">Thaiz Rojas</option>
+                <option value="lv">Lucero Vega</option>
+                <option value="ta">Thiago Alba</option>
+                </select>
+           
+                
+            <label for="turno-personal">Asignar Turno:</label>
+            <select name="" id="nombre-personal">
+                <option value="">diurno</option>
+                <option value="">tarde</option>
+                <option value="">nocturno</option>
+                </select>
+            
+
+            <button type="submit">Agregar Personal</button>
+        </form>
+        <div id="personal-list">
+            <!-- Lista de personal -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PIZZAMANIA | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Si necesitas JavaScript para funcionalidades -->
+</body>
+</html>
