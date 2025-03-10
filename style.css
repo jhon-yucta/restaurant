@@ -3,9 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('pizza.jpg'); /* Aquí se pone el nombre del archivo de la imagen */
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center center; /* Centra la imagen */
     background-color: #f4f4f4;
     color: #333;
 }
@@ -72,23 +69,23 @@ div#menu-list, div#orden-list, div#reserva-list, div#personal-list, div#factura-
 /* Pie de página */
 footer {
     background-color: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
 
 }
 
-.blanco {
-    color: white;
+.negro {
+    color: rgb(7, 7, 7);
 
 }
 
 h2 {
-    color: white;
+    color: rgb(240, 238, 238);
 }
 
 label {
-    color: white;
+    color: rgb(245, 242, 242);
 }
 
 .navegacion a {
@@ -116,6 +113,148 @@ footer {
     padding: 10px 0;
     text-align: center;
     margin-top: auto; /* Esto empuja el pie de página al final */
+}
+
+
+body {
+    background-color: #f4f4f4; /* Un color de respaldo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos específicos para reservas.html */
+body.reservas {
+    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+body {
+    background-color: #f4f4f4; /* Un color de respaldo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos específicos para gestiondemenu.html */
+body.gestiondemenu {
+    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+body {
+    background-color: #f4f4f4; /* Un color de respaldo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos específicos para gestiondeordenes.html */
+body.gestiondeordenes {
+    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+body {
+    background-color: #f4f4f4; /* Un color de respaldo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos específicos para gestiondepersonal.html */
+body.gestiondepersonal {
+    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/* Fondo general para todas las páginas */
+body {
+    background-color: #f4f4f4; /* Un color de respaldo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos específicos para facturacion.html */
+body.facturacion {
+    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+body {
+    background-color: #f4f4f4; /* Un color de respaldo */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.ofertacombo2 {
+    display: flex;
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+    
+}
+
+
+.oferta {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.oferta3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.oferta-item {
+    position: relative;
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.oferta-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nuevo {
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+
+.oferta-item img {
+    width: 100%;  /* Hace que la imagen ocupe todo el contenedor */
+    max-height: 500px; /* Ajusta la altura máxima */
+    border-radius: 10px;
 }
 
 

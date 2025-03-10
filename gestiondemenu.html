@@ -22,6 +22,7 @@
     </header>
 
     <section id="menu">
+        <body class="gestiondemenu"></body>
         <h2>Añadir Nuevo Plato al Menú</h2>
         <form id="menu-form">
             <label for="nombre-plato">Nombre del Plato:</label>
@@ -36,10 +37,21 @@
                 
             </select>
             
+            <label for="Ubicacion">Ubicacion:</label>
+            <textarea id="Ubicacion" name="Ubicacion"></textarea>
+
+            <label for="Nombre">Nombre:</label>
+            <textarea id="Nombre" name="Nombre"></textarea>
+
             <label for="descripcion">Descripción:</label>
             <textarea id="descripcion" name="descripcion"></textarea>
-            <label for="precio">Precio:</label>
-            <input type="number" id="precio" name="precio" required>
+
+            <label for="Cantidad">Cantidad:</label>
+            <input type="number" id="Cantidad" name="Cantidad" required>
+
+            <label for="Celular">Celular:</label>
+            <textarea id="Celular" name="Celular"></textarea>
+
             <button type="submit">Agregar Plato</button>
         </form>
         <div id="menu-list">
@@ -51,6 +63,21 @@
         <p>&copy; 2025 PIZZAMANIA| Todos los derechos reservados</p>
     </footer>
 
-    <script src="js/script.js"></script> <!-- Si necesitas JavaScript para funcionalidades -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("menu-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+                Swal.fire({
+                    title: "¡Plato agregado!",
+                    text: "El plato ha sido agregado con éxito al menú.",
+                    icon: "success",
+                    confirmButtonText: "Aceptar"
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>

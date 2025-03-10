@@ -20,36 +20,87 @@
         </nav>
     </header>
 
-     <!-- Gestión de Órdenes -->
+    
+<!-- Gestión de Órdenes -->
      <section id="ordenes">
-        <h2 class="blanco">Gestion de Ordenes</h2>
+        <body class="gestiondeordenes"></body>
+        <h2>Gestion de Ordenes</h2>
         <form id="orden-form">
             <label for="orden-plato">Seleccionar Plato:</label>
             
             <select name="" id="orden-plato">
+                <option value="pw">Combo de Verno 2</option>
+                <option value="pw">Oferta 2x1 Tiempo Limitado</option>
+                <option value="pw">Combo 3 Large</option>
+                <option value="pw">Combo + Gaseosa</option>
                 <option value="pw">Pizza hawaiana</option>
                 <option value="pn">Pizza napolitana </option>
                 <option value="pa">Pizza Americana, </option>
                 <option value="pp">Pizza Pepperoni </option>
                 <option value="pq">Pizza clasica de queso </option>
                 <option value="pc">Pizza continental </option>
-           
+
+
+                <section id="apellido">
+                  
+                    <form id="apellido-form">
+                        <label for="nombre-apellido">Nombre:</label>
+                        <input type="text" id="nombre-apellido" name="nombre-apellido" required placeholder="Ingrese su nombre">
+                       
+                        
+                        
+                        <label for="fecha-reserva">Fecha:</label>
+                        <input type="date" id="fecha-reserva" name="fecha-reserva" required>
+                        <label for="hora-reserva">Hora:</label>
+                        <input type="time" id="hora-reserva" name="hora-reserva" required>
+
+                        
+                        
+
+                        <label for="Ubicacion">Ubicacion:</label>
+                        <textarea id="Ubicacion" name="Ubicacion"></textarea>
+
+                        <label for="Celular">Celular:</label>
+                        <textarea id="Celular" name="Celular"></textarea>
+                        
                 <!-- Lista de platos -->
                
             </select>
             <label for="cantidad">Cantidad:</label>
             <input type="number" id="cantidad" name="cantidad" required>
+
             <button type="submit">Registrar Orden</button>
+
         </form>
         <div id="orden-list">
             <!-- Lista de órdenes -->
         </div>
+        
     </section>
+
+    
 
     <footer>
         <p>&copy; 2025 PIZZAMANIA | Todos los derechos reservados</p>
     </footer>
 
-    <script src="js/script.js"></script> <!-- Si necesitas JavaScript para funcionalidades -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("orden-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            Swal.fire({
+                title: "¡Orden Confirmada!",
+                text: "Tu pedido ha sido registrado correctamente.",
+                icon: "success",
+                confirmButtonText: "Aceptar"
+            });
+        });
+    });
+</script>
+    
+    
 </body>
 </html>
