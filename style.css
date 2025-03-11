@@ -16,16 +16,20 @@ header {
 }
 
 header nav ul {
+    
     list-style-type: none;
     padding: 0;
+    
 }
 
 header nav ul li {
+    
     display: inline;
     margin-right: 20px;
 }
 
 header nav ul li a {
+    
     color: white;
     text-decoration: none;
 }
@@ -66,15 +70,14 @@ div#menu-list, div#orden-list, div#reserva-list, div#personal-list, div#factura-
     margin-top: 20px;
 }
 
-/* Pie de página */
+
+
 footer {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    text-align: center;
+    text-align: center; /* Centra el texto y los elementos */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
     padding: 10px;
-
 }
-
 .negro {
     color: rgb(7, 7, 7);
 
@@ -113,7 +116,9 @@ footer {
     padding: 10px 0;
     text-align: center;
     margin-top: auto; /* Esto empuja el pie de página al final */
+    
 }
+
 
 
 body {
@@ -212,7 +217,7 @@ body {
 
 .oferta3 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
 }
 
@@ -258,3 +263,210 @@ body {
 }
 
 
+
+
+.pizza-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Asegura que el texto dentro también esté centrado */
+}
+
+.pizza-item {
+    display: flex;
+    position: relative;
+    width: 300px; /* Ajusta según el tamaño deseado */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    border-radius: 10px; /* Aplica el borde redondeado a todo el contenedor */
+}
+
+.pizza-item img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.info-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.info-box h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.info-box p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+
+
+
+.buy-button {
+    width: auto;
+    padding: 10px 70px;
+    background-color: #ff4d00; /* Color llamativo */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #cc3d00; /* Cambio de color al pasar el mouse */
+}
+
+@media print {
+    nav, footer, .navegacion {
+        display: none; /* Oculta la barra de navegación y el footer */
+    }
+
+}
+
+
+
+
+/* Estilos para el Header */
+header {
+    background-color: #222; /* Color oscuro elegante */
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;  /* Apila el logo y el menú verticalmente */
+    align-items: center;     /* Centra horizontalmente */
+    justify-content: center;
+    text-align: center;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Ajusta según sea necesario */
+    margin-right: 10px;
+}
+
+.brand {
+    color: #ff4d00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Centrar el menú */
+.navegacion {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centra los elementos */
+    padding: 0;
+}
+
+.navegacion li {
+    display: inline-block;
+}
+
+/* Estilos para los enlaces */
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+
+/* Hover */
+.navegacion a:hover {
+    background-color: #ff4d00;
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+.whatsapp-link {
+    text-decoration: none;
+    color: white; /* Texto blanco para mayor contraste */
+    font-weight: bold;
+    background-color: #25D366; /* Color oficial de WhatsApp */
+    padding: 10px 15px; /* Espaciado interno para un botón más definido */
+    border-radius: 25px; /* Bordes redondeados */
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.whatsapp-link:hover {
+    background-color: #1EBE5D; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandamiento leve */
+}
+
+.whatsapp-icon {
+    width: 24px; /* Tamaño más visible */
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+.imagen-familia {
+    position: absolute;
+    top: 300px; /* Ajusta este valor hasta que esté alineado */
+    right: 20px;
+    width: 650px;
+    z-index: 10;
+}
+
+.imagen-familia img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.cuadrocombo3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinear en la parte superior */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+}
+
+.combogaseosa {
+    margin-top: 0; /* Asegura alineación */
+}

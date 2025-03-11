@@ -12,10 +12,13 @@
         <nav>
             <ul class="navegacion">
                 <a href="index.html">Volver a la Página Principal</a>
+                <a href="nuestraspizzas.html">Nuestras Pizzas</a>
                 <a href="gestiondemenu.html">Gestion de menu</a>
                 <a href="gestiondeordenes.html">Gestion de ordenes</a>
                 <a href="reservas.html">reservas</a>
                 <a href="gestiondepersonal.html">Gestion de personal</a>
+
+                
             </ul>
         </nav>
     </header>
@@ -38,6 +41,13 @@
         <option value="Oferta 2x1">Oferta 2x1</option>
         <option value="Combo 3 Large">Combo 3 Large</option>
         <option value="Combo + Gaseosa">Combo + Gaseosa</option>
+        <option value="pizzahawai">Pizza Hawaiana</option>
+        <option value="pizzanapolitana">Pizza Napolitana</option>
+        <option value="pizzaamericana">Pizza Americana</option>
+        <option value="pizzapeperoni">Pizza Pepperoni</option>
+        <option value="clasicadequeso">Clasica de Queso</option>
+        <option value="pizzacontinental">Pizza Continental</option>
+
     </select>
             
             <label for="monto">Monto Total:</label>
@@ -46,12 +56,14 @@
             <button type="submit">Generar Factura</button>
         </form>
         
+        
+        
         <!-- Sección donde se mostrará la factura antes de imprimir -->
 <div id="factura-impresion" style="display: none;">
     <h2>Factura</h2>
-    <p><strong>Nombre:</strong> <span id="factura-nombre"></span></p>
+    <p><strong>Nombre del Cliente:</strong> <span id="factura-nombre"></span></p>
     <p><strong>Pedido:</strong> <span id="factura-pedido"></span></p>
-    <p><strong>Monto Total:</strong> $<span id="factura-monto"></span></p>
+    <p><strong>Monto Total:</strong> <span id="factura-monto"></span></p>
 </div>
     </section>
 
@@ -62,57 +74,64 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            // Lista de precios para los pedidos
+            let precios = {
+                "Combo Verano 2": 59.90,
+                "Oferta 2x1": 49.90,
+                "Combo 3 Large": 55.90,
+                "Combo + Gaseosa": 50.90,
+                "pizzahawai": 39.90,
+                "pizzanapolitana": 35.90,
+                "pizzaamericana": 32.90,
+                "pizzapeperoni": 37.90,
+                "clasicadequeso": 30.90,
+                "pizzacontinental": 33.90
+            };
+    
+            let selectPedido = document.getElementById("nombre-orden");
             let montoInput = document.getElementById("monto");
-        
-            // Escucha cambios en el select para actualizar el monto
-            document.getElementById("nombre-orden").addEventListener("change", function () {
-                let nombreOrden = this.value;
-                let precioBase = obtenerPrecioDesdeOrden(nombreOrden);
-        
-                if (precioBase !== null) {
-                    montoInput.value = precioBase; 
+    
+            // Escuchar cambios en el select para actualizar el monto total
+            selectPedido.addEventListener("change", function () {
+                let seleccion = this.value;
+                
+                if (precios.hasOwnProperty(seleccion)) {
+                    montoInput.value = precios[seleccion].toFixed(2); 
                 } else {
-                    montoInput.value = ""; 
+                    montoInput.value = "0.00"; 
                 }
             });
-        
-            // Función para obtener el precio según el combo seleccionado
-            function obtenerPrecioDesdeOrden(nombreOrden) {
-                let precios = {
-                    "Combo Verano 2": 59.90,
-                    "Oferta 2x1": 49.90,
-                    "Combo 3 Large": 55.90,
-                    "Combo + Gaseosa": 50.90
-                };
-        
-                return precios[nombreOrden] || null;
-            }
-        
-            // Función para generar la factura e imprimir
+    
+            // Función para generar la factura
             document.getElementById("factura-form").addEventListener("submit", function (event) {
                 event.preventDefault(); // Evita el envío del formulario
-        
+    
                 let nombre = document.getElementById("nombre-factura").value;
-                let pedido = document.getElementById("nombre-orden").value;
-                let monto = document.getElementById("monto").value;
-        
+                let pedido = selectPedido.value;
+                let monto = montoInput.value;
+    
                 if (nombre === "" || pedido === "") {
                     alert("Por favor, complete todos los campos antes de generar la factura.");
                     return;
                 }
-        
-                // Insertar los valores en la factura antes de imprimir
+    
+                // Mostrar los datos en la factura
                 document.getElementById("factura-nombre").textContent = nombre;
                 document.getElementById("factura-pedido").textContent = pedido;
-                document.getElementById("factura-monto").textContent = monto;
-        
-                // Mostrar la factura y abrir la ventana de impresión
+                document.getElementById("factura-monto").textContent = "S/" + monto;
+    
+                // Mostrar la factura y abrir la impresión
                 document.getElementById("factura-impresion").style.display = "block";
                 window.print();
             });
         });
-        </script>
-        
+    </script>
     
-</body>
-</html>
+        
+
+
+
+
+    
+
+
