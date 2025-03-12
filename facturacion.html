@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FACTURACION</title>
-    <link rel="stylesheet" href="style.css"> <!-- Vincula tu archivo CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- vincula el archivo CSS -->
 </head>
 <body>
     <header>
@@ -23,7 +23,7 @@
         </nav>
     </header>
 
-      <!-- Facturación -->
+      <!-- Facturacion -->
     <section id="facturacion">
         <h2>Facturación</h2>
         <body class="facturacion">
@@ -58,7 +58,7 @@
         
         
         
-        <!-- Sección donde se mostrará la factura antes de imprimir -->
+        <!-- lugar donde se mostrara la factura antes de imprimir -->
 <div id="factura-impresion" style="display: none;">
     <h2>Factura</h2>
     <p><strong>Nombre del Cliente:</strong> <span id="factura-nombre"></span></p>
@@ -74,7 +74,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Lista de precios para los pedidos
+            // lista de precios de los pedidos
             let precios = {
                 "Combo Verano 2": 59.90,
                 "Oferta 2x1": 49.90,
@@ -91,7 +91,7 @@
             let selectPedido = document.getElementById("nombre-orden");
             let montoInput = document.getElementById("monto");
     
-            // Escuchar cambios en el select para actualizar el monto total
+            // da cambios en el select para actualizar el monto total
             selectPedido.addEventListener("change", function () {
                 let seleccion = this.value;
                 
@@ -102,9 +102,9 @@
                 }
             });
     
-            // Función para generar la factura
+            // función para generar la factura
             document.getElementById("factura-form").addEventListener("submit", function (event) {
-                event.preventDefault(); // Evita el envío del formulario
+                event.preventDefault(); 
     
                 let nombre = document.getElementById("nombre-factura").value;
                 let pedido = selectPedido.value;
@@ -115,12 +115,12 @@
                     return;
                 }
     
-                // Mostrar los datos en la factura
+                // muestra los datos en la factura
                 document.getElementById("factura-nombre").textContent = nombre;
                 document.getElementById("factura-pedido").textContent = pedido;
                 document.getElementById("factura-monto").textContent = "S/" + monto;
     
-                // Mostrar la factura y abrir la impresión
+                // Muestra la factura y abre la impresion
                 document.getElementById("factura-impresion").style.display = "block";
                 window.print();
             });

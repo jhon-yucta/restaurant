@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* son los estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     background-color: #333;
     color: rgb(241, 13, 13);
@@ -39,7 +38,7 @@ section {
     padding: 40px 20px;
 }
 
-/* Formularios */
+/* formularios */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -65,7 +64,7 @@ form button {
     cursor: pointer;
 }
 
-/* Lista de elementos */
+/* lista de elementos */
 div#menu-list, div#orden-list, div#reserva-list, div#personal-list, div#factura-list {
     margin-top: 20px;
 }
@@ -73,8 +72,8 @@ div#menu-list, div#orden-list, div#reserva-list, div#personal-list, div#factura-
 
 
 footer {
-    text-align: center; /* Centra el texto y los elementos */
-    background-color: #333; /* Fondo oscuro */
+    text-align: center; /* centra el texto y los elementos */
+    background-color: #333; /* fondo oscuro */
     color: white; /* Texto blanco */
     padding: 10px;
 }
@@ -92,12 +91,12 @@ label {
 }
 
 .navegacion a {
-    color: #f8f5f4; /* Color de texto, por ejemplo, un tono de naranja */
-    text-decoration: none; /* Elimina el subrayado por defecto */
+    color: #f8f5f4; /* color de texto */
+    text-decoration: none; /* elimina el subrayado */
     padding: 10px;
 }
 
-/* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+/* asegura que el body ocupe el 100% de la altura de la ventana */
 body {
     display: flex;
     flex-direction: column;
@@ -105,88 +104,88 @@ body {
     margin: 0;
 }
 
-/* Contenido principal de la página */
+/* contenido principal de la página */
 main {
-    flex: 1; /* Esto asegura que el contenido ocupe todo el espacio disponible */
+    flex: 1; /*  asegura que el contenido ocupe todo el espacio disponible */
 }
 
 /* Pie de página */
 footer {
-    background-color: #0a0a0aab; /* Opcional: el color del pie de página */
+    background-color: #0a0a0aab; /* el color del pie de pagina */
     padding: 10px 0;
     text-align: center;
-    margin-top: auto; /* Esto empuja el pie de página al final */
+    margin-top: auto; /* manda el pie de pagina al final */
     
 }
 
 
 
 body {
-    background-color: #f4f4f4; /* Un color de respaldo */
+    background-color: #f4f4f4; /* color de respaldo */
     margin: 0;
     padding: 0;
 }
 
-/* Estilos específicos para reservas.html */
+/* estilos para reservas.html */
 body.reservas {
-    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-image: url('pizza.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
 body {
-    background-color: #f4f4f4; /* Un color de respaldo */
+    background-color: #f4f4f4; /* color de respaldo */
     margin: 0;
     padding: 0;
 }
 
-/* Estilos específicos para gestiondemenu.html */
+/* estilos para gestiondemenu.html */
 body.gestiondemenu {
-    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-image: url('pizza.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
 body {
-    background-color: #f4f4f4; /* Un color de respaldo */
+    background-color: #f4f4f4; /* color de respaldo */
     margin: 0;
     padding: 0;
 }
 
-/* Estilos específicos para gestiondeordenes.html */
+/* estilos para gestiondeordenes.html */
 body.gestiondeordenes {
-    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-image: url('pizza.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
 body {
-    background-color: #f4f4f4; /* Un color de respaldo */
+    background-color: #f4f4f4; /*  color de respaldo */
     margin: 0;
     padding: 0;
 }
 
-/* Estilos específicos para gestiondepersonal.html */
+/* estilos  para gestiondepersonal.html */
 body.gestiondepersonal {
-    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-image: url('pizza.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
-/* Fondo general para todas las páginas */
+/* Fondo general para todas las paginas */
 body {
-    background-color: #f4f4f4; /* Un color de respaldo */
+    background-color: #f4f4f4; /* color de respaldo */
     margin: 0;
     padding: 0;
 }
 
-/* Estilos específicos para facturacion.html */
+/* estilos  para facturacion.html */
 body.facturacion {
-    background-image: url('pizza.jpg'); /* Cambia esto por el nombre real de tu imagen */
+    background-image: url('pizza.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,7 +193,7 @@ body.facturacion {
 }
 
 body {
-    background-color: #f4f4f4; /* Un color de respaldo */
+    background-color: #f4f4f4; /* color de respaldo */
     margin: 0;
     padding: 0;
 }
@@ -203,7 +202,7 @@ body {
 
 .ofertacombo2 {
     display: flex;
-    gap: 20px; /* Espacio entre las imágenes */
+    gap: 20px; /* espacio entre las imagenes */
     padding: 20px;
     
 }
@@ -217,7 +216,7 @@ body {
 
 .oferta3 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -257,8 +256,8 @@ body {
 
 
 .oferta-item img {
-    width: 100%;  /* Hace que la imagen ocupe todo el contenedor */
-    max-height: 500px; /* Ajusta la altura máxima */
+    width: 100%;  /* hace que la imagen ocupe todo el contenedor */
+    max-height: 500px; /* Ajusta la altura maxima */
     border-radius: 10px;
 }
 
@@ -271,16 +270,16 @@ body {
     gap: 15px;
     justify-items: center;
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center; /* Asegura que el texto dentro también esté centrado */
+    align-items: center; /* centra los elementos horizontalmente */
+    text-align: center; /* asegura que el texto dentro tambien este centrado */
 }
 
 .pizza-item {
     display: flex;
     position: relative;
-    width: 300px; /* Ajusta según el tamaño deseado */
-    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
-    border-radius: 10px; /* Aplica el borde redondeado a todo el contenedor */
+    width: 300px; /* ajusta al tamaño deseado */
+    overflow: hidden; /* oculta  contenido que sobresalga */
+    border-radius: 10px; /* aplica el borde redondeado a todo el contenedor */
 }
 
 .pizza-item img {
@@ -318,7 +317,7 @@ body {
 .buy-button {
     width: auto;
     padding: 10px 70px;
-    background-color: #ff4d00; /* Color llamativo */
+    background-color: #ff4d00; 
     color: white;
     border: none;
     cursor: pointer;
@@ -335,7 +334,7 @@ body {
 
 @media print {
     nav, footer, .navegacion {
-        display: none; /* Oculta la barra de navegación y el footer */
+        display: none; /* Oculta la barra de navegacion y el footer */
     }
 
 }
@@ -343,17 +342,17 @@ body {
 
 
 
-/* Estilos para el Header */
+/* estilos para el Header */
 header {
-    background-color: #222; /* Color oscuro elegante */
+    background-color: #222; 
     padding: 15px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .container {
     display: flex;
-    flex-direction: column;  /* Apila el logo y el menú verticalmente */
-    align-items: center;     /* Centra horizontalmente */
+    flex-direction: column;  /* pone el logo y el menú verticalmente */
+    align-items: center;     /* centra horizontalmente */
     justify-content: center;
     text-align: center;
 }
@@ -365,7 +364,7 @@ header {
 }
 
 .logo {
-    height: 50px; /* Ajusta según sea necesario */
+    height: 50px; /* ajusta según sea necesario */
     margin-right: 10px;
 }
 
@@ -375,12 +374,12 @@ header {
     font-weight: bold;
 }
 
-/* Centrar el menú */
+/* centrar el menu */
 .navegacion {
     list-style: none;
     display: flex;
     gap: 20px;
-    justify-content: center; /* Centra los elementos */
+    justify-content: center; /* centra los elementos */
     padding: 0;
 }
 
@@ -388,7 +387,7 @@ header {
     display: inline-block;
 }
 
-/* Estilos para los enlaces */
+/* estilos para los enlaces */
 .navegacion a {
     text-decoration: none;
     color: white;
@@ -399,13 +398,13 @@ header {
 }
 
 
-/* Hover */
+
 .navegacion a:hover {
     background-color: #ff4d00;
     color: white;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -422,24 +421,24 @@ header {
 
 .whatsapp-link {
     text-decoration: none;
-    color: white; /* Texto blanco para mayor contraste */
+    color: white; /* texto blanco  */
     font-weight: bold;
-    background-color: #25D366; /* Color oficial de WhatsApp */
-    padding: 10px 15px; /* Espaciado interno para un botón más definido */
-    border-radius: 25px; /* Bordes redondeados */
+    background-color: #25D366; /* color oficial de wsp*/
+    padding: 10px 15px; /* espaciado para un botón definido */
+    border-radius: 25px; /* bordes redondeados */
     display: inline-flex;
     align-items: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .whatsapp-link:hover {
-    background-color: #1EBE5D; /* Color más oscuro al pasar el mouse */
-    transform: scale(1.05); /* Efecto de agrandamiento leve */
+    background-color: #1EBE5D; /* color oscuro al pasar el mouse */
+    transform: scale(1.05); /*efecto de agrandamiento leve */
 }
 
 .whatsapp-icon {
-    width: 24px; /* Tamaño más visible */
+    width: 24px; /* tamaño mas visible */
     height: 24px;
     margin-right: 8px;
 }
@@ -447,7 +446,7 @@ header {
 
 .imagen-familia {
     position: absolute;
-    top: 300px; /* Ajusta este valor hasta que esté alineado */
+    top: 300px; /* ajusta el valor hasta que este alineado */
     right: 20px;
     width: 650px;
     z-index: 10;
@@ -462,11 +461,28 @@ header {
 .cuadrocombo3 {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinear en la parte superior */
-    gap: 20px; /* Espacio entre los elementos */
+    align-items: flex-start; /* Alinea a la parte superior */
+    gap: 20px; /* espacio entre los elementos */
     padding: 20px;
 }
 
 .combogaseosa {
-    margin-top: 0; /* Asegura alineación */
+    margin-top: 0; /* asegura alineacion */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
